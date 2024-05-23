@@ -1,0 +1,33 @@
+Task:
+Create a python tool that accepts a folderDir parameter. The folderDir parameter should be a directory with python files. There must be a PythonFile class that has fields: FileName, FilePath, FileType, FileLength, FileHash. There must be a FileManager class that has functions for reading files in a directory, for serializing a list of PythonFile class to Json, and for deserializing json data into a list of PythonFile class. All class fields must be strongly typed. The tool will then hash using blake20 all python files inside folderDir parameter. Put each data into the PythonFile class. The output shall be the list of PythonFile class serialized to json file saved to /output folder. There must be 100 files filled with random characters that have a length between 0 to 128 kilobytes in /test/data. There must be unit tests in the /test folder. There must be a unit test that loads all files in /test/data and computes the hash of each file. There must be a unit test for serializing a sample list of PythonFile Class to Json and then deserializing the Json data into a list of PythonFile classes and then comparing the hashes if they are the same and giving error if not the same.
+
+Config:
+ChatEnvConfig.with_memory: False
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.git_management: False
+ChatEnvConfig.gui_design: True
+ChatEnvConfig.incremental_develop: False
+ChatEnvConfig.background_prompt: ChatDev is a software company powered by multiple intelligent agents, such as chief executive officer, chief human resources officer, chief product officer, chief technology officer, etc, with a multi-agent organizational structure and the mission of 'changing the digital world through programming'.
+
+
+Roster:
+Chief Executive Officer, Counselor, Chief Human Resource Officer, Chief Product Officer, Chief Technology Officer, Programmer, Code Reviewer, Software Test Engineer, Chief Creative Officer
+
+Modality:
+python tool
+
+Ideas:
+
+
+Language:
+ Python
+
+Code_Version:
+4.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
