@@ -1,0 +1,1 @@
+Make a simple python tool that accepts a parameter string called "word". It should then print the number of vowels and consonants in the word. Make sure the program runs.
