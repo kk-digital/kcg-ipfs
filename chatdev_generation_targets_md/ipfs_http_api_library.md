@@ -14,4 +14,5 @@ The library must have these functionalities and their respective apis:
 9. Download a folder by cid from ipfs network
 10. Read a file by cid from ipfs network
 11. Other very important apis needed for accessing files, listing files, getting files, reading files from and into the ipfs network
+
 All apis should have their own unit tests. The library should work and be ready to be used. The unit tests should run and should pass.
