@@ -1,18 +1,35 @@
-Make an IPFS HTTP API Library. 
-Use Kubo RPC API docs found in this website https://docs.ipfs.tech/reference/kubo/rpc/ as reference.
-All apis must be an HTTP call to the endpoints found in Kubo RPC API docs.
-There must be no third party IPFS library import. 
-The library must have these functionalities and their respective apis:
-1. Add a file to ipfs network
-2. Add a folder to ipfs network
-3. Pin a cid to local ipfs network
-4. Pin a cid recursively to local ipfs
-5. Remove a pinned cid
-6. Get a file by cid from ipfs network
-7. Get a folder by cid from ipfs network
-8. Download a file by cid from ipfs network
-9. Download a folder by cid from ipfs network
-10. Read a file by cid from ipfs network
-11. Other very important apis needed for accessing files, listing files, getting files, reading files from and into the ipfs network
+Name: IPFS HTTP API Library
 
-All apis should have their own unit tests. The library should work and be ready to be used. The unit tests should run and should pass.
+Instructions:
+* Make an IPFS HTTP API Library.
+* There must be no third party IPFS library import.
+* There must be no GUI.
+* Use Kubo RPC API docs found in this website https://docs.ipfs.tech/reference/kubo/rpc/ as reference.
+* All apis must be an HTTP call to the endpoints found in Kubo RPC API docs.
+* There must be an IpfsHttpApi class.
+* The IpfsHttpApi class must have these apis:
+  1. Add a file to ipfs network
+  2. Add a folder to ipfs network
+  3. Pin a cid to local ipfs network
+  4. Pin a cid recursively to local ipfs
+  5. Remove a pinned cid
+  6. Get a file by cid from ipfs network
+  7. Get a folder by cid from ipfs network
+  8. Download a file by cid from ipfs network
+  9. Download a folder by cid from ipfs network
+  10. Read a file by cid from ipfs network
+  11. Other very important apis needed for accessing files, listing files, getting files, reading files from and into the ipfs network
+* Testing Requirements, there must be:
+  1. Test for calling the api for adding a file to ipfs network
+  2. Test for calling the api for adding a folder to ipfs network
+  3. Test for pinning a cid to local
+  4. Test for pinning a cid recursively
+  5. Test for removing pinned cid
+  6. Test for getting a file by cid
+  7. Test for getting a folder by cid
+  8. Test for downloading a file by cid
+  9. Test for downloading a folder by cid
+  10. Test for reading a file by cid
+  11. Test for the other apis.
+* All apis should have their own unit tests. The library should work and be ready to be used. The unit tests should run and should pass.
+
