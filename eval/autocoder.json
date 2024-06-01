@@ -1,0 +1,1207 @@
+{
+    "tests": [
+        {
+            "name_of_test": "def has_close_elements(numbers: List[float], threshold: float) -> bool:",
+            "description_of_test": "Check if in given list of numbers, are any two numbers closer to each other than given threshold. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1.0, 2.0, 3.0], 0.5",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3",
+                    "output": "True"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def separate_paren_groups(paren_string: str) -> List[str]:",
+            "description_of_test": "Input to this function is a string containing multiple groups of nested parentheses. Your goal is to separate those group into separate strings and return the list of those. Separate groups are balanced (each open brace is properly closed) and not nested within each other Ignore any spaces in the input string. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'( ) (( )) (( )( ))'",
+                    "output": "['()', '(())', '(()())']"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def truncate_number(number: float) -> float:",
+            "description_of_test": "Given a positive floating point number, it can be decomposed into and integer part (largest integer smaller than given number) and decimals (leftover part always smaller than 1).  Return the decimal part of the number. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "3.5",
+                    "output": "0.5"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def below_zero(operations: List[int]) -> bool:",
+            "description_of_test": "You're given a list of deposit and withdrawal operations on a bank account that starts with zero balance. Your task is to detect if at any point the balance of account fallls below zero, and at that point function should return True. Otherwise it should return False. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 2, -4, 5]",
+                    "output": "True"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def mean_absolute_deviation(numbers: List[float]) -> float:",
+            "description_of_test": "For a given list of input numbers, calculate Mean Absolute Deviation around the mean of this dataset. Mean Absolute Deviation is the average absolute difference between each element and a centerpoint (mean in this case): MAD = average | x - x_mean | ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1.0, 2.0, 3.0, 4.0]",
+                    "output": "1.0"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def intersperse(numbers: List[int], delimeter: int) -> List[int]:",
+            "description_of_test": "Insert a number 'delimeter' between every two consecutive elements of input list `numbers' ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[], 4",
+                    "output": "[]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 2, 3], 4",
+                    "output": "[1, 4, 2, 4, 3]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def parse_nested_parens(paren_string: str) -> List[int]:",
+            "description_of_test": "Input to this function is a string represented multiple groups for nested parentheses separated by spaces. For each of the group, output the deepest level of nesting of parentheses. E.g. (()()) has maximum two levels of nesting while ((())) has three.  ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'(()()) ((())) () ((())()())'",
+                    "output": "[2, 3, 1, 3]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def filter_by_substring(strings: List[str], substring: str) -> List[str]:",
+            "description_of_test": "Filter an input list of strings only for ones that contain given substring ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[], 'a'",
+                    "output": "[]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "['abc', 'bacd', 'cde', 'array'], 'a'",
+                    "output": "['abc', 'bacd', 'array']"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def sum_product(numbers: List[int]) -> Tuple[int, int]:",
+            "description_of_test": "For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list. Empty sum should be equal to 0 and empty product should be equal to 1. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[]",
+                    "output": "(0, 1)"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 2, 3, 4]",
+                    "output": "(10, 24)"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def rolling_max(numbers: List[int]) -> List[int]:",
+            "description_of_test": "From a given list of integers, generate a list of rolling maximum element found until given moment in the sequence. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3, 2, 3, 4, 2]",
+                    "output": "[1, 2, 3, 3, 3, 4, 4]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def make_palindrome(string: str) -> str:",
+            "description_of_test": "Test if given string is a palindrome \"\"\" return string == string[::-1]   def make_palindrome(string: str) -> str: Find the shortest palindrome that begins with a supplied string. Algorithm idea is simple: - Find the longest postfix of supplied string that is a palindrome. - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "''",
+                    "output": "''"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'cat'",
+                    "output": "'catac'"
+                },
+                {
+                    "test_id": 3,
+                    "input": "'cata'",
+                    "output": "'catac'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def string_xor(a: str, b: str) -> str:",
+            "description_of_test": "Input are two strings a and b consisting only of 1s and 0s. Perform binary XOR on these inputs and return result also as a string. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'010', '110'",
+                    "output": "'100'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def longest(strings: List[str]) -> Optional[str]:",
+            "description_of_test": "Out of list of strings, return the longest one. Return the first one in case of multiple strings of the same length. Return None in case the input list is empty. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[]",
+                    "output": ""
+                },
+                {
+                    "test_id": 2,
+                    "input": "['a', 'b', 'c']",
+                    "output": "'a'"
+                },
+                {
+                    "test_id": 3,
+                    "input": "['a', 'bb', 'ccc']",
+                    "output": "'ccc'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def greatest_common_divisor(a: int, b: int) -> int:",
+            "description_of_test": "Return a greatest common divisor of two integers a and b ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "3, 5",
+                    "output": "1"
+                },
+                {
+                    "test_id": 2,
+                    "input": "25, 15",
+                    "output": "5"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def all_prefixes(string: str) -> List[str]:",
+            "description_of_test": "Return list of all prefixes from shortest to longest of the input string ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'abc'",
+                    "output": "['a', 'ab', 'abc']"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def string_sequence(n: int) -> str:",
+            "description_of_test": "Return a string containing space-delimited numbers starting from 0 upto n inclusive. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "0",
+                    "output": "'0'"
+                },
+                {
+                    "test_id": 2,
+                    "input": "5",
+                    "output": "'0 1 2 3 4 5'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def count_distinct_characters(string: str) -> int:",
+            "description_of_test": "Given a string, find out how many distinct characters (regardless of case) does it consist of ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'xyzXYZ'",
+                    "output": "3"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'Jerry'",
+                    "output": "4"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def parse_music(music_string: str) -> List[int]:",
+            "description_of_test": "Input to this function is a string representing musical notes in a special ASCII format. Your task is to parse this string and return list of integers corresponding to how many beats does each not last.  Here is a legend: 'o' - whole note, lasts four beats 'o|' - half note, lasts two beats '.|' - quater note, lasts one beat  ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'o o| .| o| o| .| .| .| .| o o'",
+                    "output": "[4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def how_many_times(string: str, substring: str) -> int:",
+            "description_of_test": "Find how many times a given substring can be found in the original string. Count overlaping cases. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'', 'a'",
+                    "output": "0"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'aaa', 'a'",
+                    "output": "3"
+                },
+                {
+                    "test_id": 3,
+                    "input": "'aaaa', 'aa'",
+                    "output": "3"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def sort_numbers(numbers: str) -> str:",
+            "description_of_test": "Input is a space-delimited string of numberals from 'zero' to 'nine'. Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'. Return the string with numbers sorted from smallest to largest ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'three one five'",
+                    "output": "'one three five'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:",
+            "description_of_test": "From a supplied list of numbers (of length at least two) select and return two that are the closest to each other and return them in order (smaller number, larger number). ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1.0, 2.0, 3.0, 4.0, 5.0, 2.2]",
+                    "output": "(2.0, 2.2)"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1.0, 2.0, 3.0, 4.0, 5.0, 2.0]",
+                    "output": "(2.0, 2.0)"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def rescale_to_unit(numbers: List[float]) -> List[float]:",
+            "description_of_test": "Given list of numbers (of at least two elements), apply a linear transform to that list, such that the smallest number will become 0 and the largest will become 1 ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1.0, 2.0, 3.0, 4.0, 5.0]",
+                    "output": "[0.0, 0.25, 0.5, 0.75, 1.0]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def filter_integers(values: List[Any]) -> List[int]:",
+            "description_of_test": "Filter given list of any python values only for integers ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "['a', 3.14, 5]",
+                    "output": "[5]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 2, 3, 'abc', {}, []]",
+                    "output": "[1, 2, 3]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def strlen(string: str) -> int:",
+            "description_of_test": "Return length of given string ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "''",
+                    "output": "0"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'abc'",
+                    "output": "3"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def largest_divisor(n: int) -> int:",
+            "description_of_test": "For a given number n, find the largest number that divides n evenly, smaller than n ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "15",
+                    "output": "5"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def factorize(n: int) -> List[int]:",
+            "description_of_test": "Return list of prime factors of given integer in the order from smallest to largest. Each of the factors should be listed number of times corresponding to how many times it appeares in factorization. Input number should be equal to the product of all factors ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "8",
+                    "output": "[2, 2, 2]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "25",
+                    "output": "[5, 5]"
+                },
+                {
+                    "test_id": 3,
+                    "input": "70",
+                    "output": "[2, 5, 7]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def remove_duplicates(numbers: List[int]) -> List[int]:",
+            "description_of_test": "From a list of integers, remove all elements that occur more than once. Keep order of elements left the same as in the input. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3, 2, 4]",
+                    "output": "[1, 3, 4]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def flip_case(string: str) -> str:",
+            "description_of_test": "For a given string, flip lowercase characters to uppercase and uppercase to lowercase. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'Hello'",
+                    "output": "'hELLO'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def concatenate(strings: List[str]) -> str:",
+            "description_of_test": "Concatenate list of strings into a single string ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[]",
+                    "output": "''"
+                },
+                {
+                    "test_id": 2,
+                    "input": "['a', 'b', 'c']",
+                    "output": "'abc'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:",
+            "description_of_test": "Filter an input list of strings only for ones that start with a given prefix. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[], 'a'",
+                    "output": "[]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "['abc', 'bcd', 'cde', 'array'], 'a'",
+                    "output": "['abc', 'array']"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def get_positive(l: list):",
+            "description_of_test": "Return only positive numbers in the list. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[-1, 2, -4, 5, 6]",
+                    "output": "[2, 5, 6]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]",
+                    "output": "[5, 3, 2, 3, 9, 123, 1]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def is_prime(n):",
+            "description_of_test": "Return true if a given number is prime, and false otherwise. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "6",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "101",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "11",
+                    "output": "True"
+                },
+                {
+                    "test_id": 4,
+                    "input": "13441",
+                    "output": "True"
+                },
+                {
+                    "test_id": 5,
+                    "input": "61",
+                    "output": "True"
+                },
+                {
+                    "test_id": 6,
+                    "input": "4",
+                    "output": "False"
+                },
+                {
+                    "test_id": 7,
+                    "input": "1",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def find_zero(xs: list):",
+            "description_of_test": " Evaluates polynomial with coefficients xs at point x. return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n  return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])   def find_zero(xs: list): xs are coefficients of a polynomial. find_zero find x such that poly(x) = 0. find_zero returns only only zero point, even if there are many. Moreover, find_zero only takes list xs having even number of coefficients and largest non zero coefficient as it guarantees a solution. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "find_zero([1, 2]), 2) # f(x) = 1 + 2",
+                    "output": "-0.5"
+                },
+                {
+                    "test_id": 2,
+                    "input": "find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^",
+                    "output": "1.0"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def sort_third(l: list):",
+            "description_of_test": "This function takes a list l and returns a list l' such that l' is identical to l in the indicies that are not divisible by three, while its values at the indicies that are divisible by three are equal to the values of the corresponding indicies of l, but sorted. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3]",
+                    "output": "[1, 2, 3]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 6, 3, 4, 8, 9, 2]",
+                    "output": "[2, 6, 3, 4, 8, 9, 5]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def unique(l: list):",
+            "description_of_test": "Return sorted unique elements in a list ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[5, 3, 5, 2, 3, 3, 9, 0, 123]",
+                    "output": "[0, 2, 3, 5, 9, 123]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def max_element(l: list):",
+            "description_of_test": "Return maximum element in the list. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3]",
+                    "output": "3"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]",
+                    "output": "123"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def fizz_buzz(n: int):",
+            "description_of_test": "Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "50",
+                    "output": "0"
+                },
+                {
+                    "test_id": 2,
+                    "input": "78",
+                    "output": "2"
+                },
+                {
+                    "test_id": 3,
+                    "input": "79",
+                    "output": "3"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def sort_even(l: list):",
+            "description_of_test": "This function takes a list l and returns a list l' such that l' is identical to l in the odd indicies, while its values at the even indicies are equal to the values of the even indicies of l, but sorted. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3]",
+                    "output": "[1, 2, 3]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 6, 3, 4]",
+                    "output": "[3, 6, 5, 4]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def decode_cyclic(s: str):",
+            "description_of_test": " returns encoded string by cycling groups of three characters.  # split string to groups. Each of length 3. groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)] # cycle elements in each group. Unless group has fewer elements than 3. groups = [(group[1:] + group[0]) if len(group) == 3 else group for group in groups] return \"\".join(groups)   def decode_cyclic(s: str):  takes as input string encoded with encode_cyclic function. Returns decoded string. ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def prime_fib(n: int):",
+            "description_of_test": " prime_fib returns n-th number that is a Fibonacci number and it's also prime. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "1",
+                    "output": "2"
+                },
+                {
+                    "test_id": 2,
+                    "input": "2",
+                    "output": "3"
+                },
+                {
+                    "test_id": 3,
+                    "input": "3",
+                    "output": "5"
+                },
+                {
+                    "test_id": 4,
+                    "input": "4",
+                    "output": "13"
+                },
+                {
+                    "test_id": 5,
+                    "input": "5",
+                    "output": "89"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def triples_sum_to_zero(l: list):",
+            "description_of_test": " triples_sum_to_zero takes a list of integers as an input. it returns True if there are three distinct elements in the list that sum to zero, and False otherwise.  ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 3, 5, 0]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 3, -2, 1]",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "[1, 2, 3, 7]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 4,
+                    "input": "[2, 4, -5, 3, 9, 7]",
+                    "output": "True"
+                },
+                {
+                    "test_id": 5,
+                    "input": "[1]",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def car_race_collision(n: int):",
+            "description_of_test": " Imagine a road that's a perfectly straight infinitely long line. n cars are driving left to right;  simultaneously, a different set of n cars are driving right to left.   The two sets of cars start out being very far from each other.  All cars move in the same speed.  Two cars are said to collide when a car that's moving left to right hits a car that's moving right to left. However, the cars are infinitely sturdy and strong; as a result, they continue moving in their trajectory as if they did not collide.  This function outputs the number of such collisions. ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def incr_list(l: list):",
+            "description_of_test": "Return list with elements incremented by 1. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 3]",
+                    "output": "[2, 3, 4]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 3, 5, 2, 3, 3, 9, 0, 123]",
+                    "output": "[6, 4, 6, 3, 4, 4, 10, 1, 124]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def pairs_sum_to_zero(l):",
+            "description_of_test": " pairs_sum_to_zero takes a list of integers as an input. it returns True if there are two distinct elements in the list that sum to zero, and False otherwise. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 3, 5, 0]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 3, -2, 1]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 3,
+                    "input": "[1, 2, 3, 7]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 4,
+                    "input": "[2, 4, -5, 3, 5, 7]",
+                    "output": "True"
+                },
+                {
+                    "test_id": 5,
+                    "input": "[1]",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def change_base(x: int, base: int):",
+            "description_of_test": "Change numerical base of input number x to base. return string representation after the conversion. base numbers are less than 10. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "8, 3",
+                    "output": "'22'"
+                },
+                {
+                    "test_id": 2,
+                    "input": "8, 2",
+                    "output": "'1000'"
+                },
+                {
+                    "test_id": 3,
+                    "input": "7, 2",
+                    "output": "'111'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def triangle_area(a, h):",
+            "description_of_test": "Given length of a side and high return area for a triangle. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "5, 3",
+                    "output": "7.5"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def fib4(n: int):",
+            "description_of_test": "The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows: fib4(0) -> 0 fib4(1) -> 0 fib4(2) -> 2 fib4(3) -> 0 fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4). Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "5",
+                    "output": "4"
+                },
+                {
+                    "test_id": 2,
+                    "input": "6",
+                    "output": "8"
+                },
+                {
+                    "test_id": 3,
+                    "input": "7",
+                    "output": "14"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def median(l: list):",
+            "description_of_test": "Return median of elements in the list l. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[3, 1, 2, 4, 5]",
+                    "output": "3"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[-10, 4, 6, 1000, 10, 20]",
+                    "output": "15.0"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def is_palindrome(text: str):",
+            "description_of_test": " Checks if given string is a palindrome ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "''",
+                    "output": "True"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'aba'",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "'aaaaa'",
+                    "output": "True"
+                },
+                {
+                    "test_id": 4,
+                    "input": "'zbcd'",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def modp(n: int, p: int):",
+            "description_of_test": "Return 2^n modulo p (be aware of numerics). ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "3, 5",
+                    "output": "3"
+                },
+                {
+                    "test_id": 2,
+                    "input": "1101, 101",
+                    "output": "2"
+                },
+                {
+                    "test_id": 3,
+                    "input": "0, 101",
+                    "output": "1"
+                },
+                {
+                    "test_id": 4,
+                    "input": "3, 11",
+                    "output": "8"
+                },
+                {
+                    "test_id": 5,
+                    "input": "100, 101",
+                    "output": "1"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def decode_shift(s: str):",
+            "description_of_test": " returns encoded string by shifting every character by 5 in the alphabet.  return \"\".join([chr(((ord(ch) + 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])   def decode_shift(s: str):  takes as input string encoded with encode_shift function. Returns decoded string. ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def remove_vowels(text):",
+            "description_of_test": " remove_vowels is a function that takes string and returns string without vowels. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "''",
+                    "output": "''"
+                },
+                {
+                    "test_id": 2,
+                    "input": "\"abcdef\\nghijklm\"",
+                    "output": "'bcdf\\nghjklm'"
+                },
+                {
+                    "test_id": 3,
+                    "input": "'abcdef'",
+                    "output": "'bcdf'"
+                },
+                {
+                    "test_id": 4,
+                    "input": "'aaaaa'",
+                    "output": "''"
+                },
+                {
+                    "test_id": 5,
+                    "input": "'aaBAA'",
+                    "output": "'B'"
+                },
+                {
+                    "test_id": 6,
+                    "input": "'zbcd'",
+                    "output": "'zbcd'"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def below_threshold(l: list, t: int):",
+            "description_of_test": "Return True if all numbers in the list l are below threshold t. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 4, 10], 100",
+                    "output": "True"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 20, 4, 10], 5",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def add(x: int, y: int):",
+            "description_of_test": "Add two numbers x and y ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "2, 3",
+                    "output": "5"
+                },
+                {
+                    "test_id": 2,
+                    "input": "5, 7",
+                    "output": "12"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def same_chars(s0: str, s1: str):",
+            "description_of_test": " Check if two words have the same characters. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "'eabcdzzzz', 'dddzzzzzzzddeddabc'",
+                    "output": "True"
+                },
+                {
+                    "test_id": 2,
+                    "input": "'abcd', 'dddddddabc'",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "'dddddddabc', 'abcd'",
+                    "output": "True"
+                },
+                {
+                    "test_id": 4,
+                    "input": "'eabcd', 'dddddddabc'",
+                    "output": "False"
+                },
+                {
+                    "test_id": 5,
+                    "input": "'abcd', 'dddddddabce'",
+                    "output": "False"
+                },
+                {
+                    "test_id": 6,
+                    "input": "'eabcdzzzz', 'dddzzzzzzzddddabc'",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def fib(n: int):",
+            "description_of_test": "Return n-th Fibonacci number. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "10",
+                    "output": "55"
+                },
+                {
+                    "test_id": 2,
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "test_id": 3,
+                    "input": "8",
+                    "output": "21"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def correct_bracketing(brackets: str):",
+            "description_of_test": "brackets is a string of \"<\" and \">\". return True if every opening bracket has a corresponding closing bracket.  ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "\"<\"",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "\"<>\"",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "\"<<><>>\"",
+                    "output": "True"
+                },
+                {
+                    "test_id": 4,
+                    "input": "\"><<>\"",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def monotonic(l: list):",
+            "description_of_test": "Return True is list elements are monotonically increasing or decreasing. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 2, 4, 20]",
+                    "output": "True"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 20, 4, 10]",
+                    "output": "False"
+                },
+                {
+                    "test_id": 3,
+                    "input": "[4, 1, 0, -10]",
+                    "output": "True"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def common(l1: list, l2: list):",
+            "description_of_test": "Return sorted unique common elements for two lists. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121]",
+                    "output": "[1, 5, 653]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[5, 3, 2, 8], [3, 2]",
+                    "output": "[2, 3]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def largest_prime_factor(n: int):",
+            "description_of_test": "Return the largest prime factor of n. Assume n > 1 and is not a prime. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "13195",
+                    "output": "29"
+                },
+                {
+                    "test_id": 2,
+                    "input": "2048",
+                    "output": "2"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def sum_to_n(n: int):",
+            "description_of_test": "sum_to_n is a function that sums numbers from 1 to n. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "30",
+                    "output": "465"
+                },
+                {
+                    "test_id": 2,
+                    "input": "100",
+                    "output": "5050"
+                },
+                {
+                    "test_id": 3,
+                    "input": "5",
+                    "output": "15"
+                },
+                {
+                    "test_id": 4,
+                    "input": "10",
+                    "output": "55"
+                },
+                {
+                    "test_id": 5,
+                    "input": "1",
+                    "output": "1"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def correct_bracketing(brackets: str):",
+            "description_of_test": "brackets is a string of \"(\" and \")\". return True if every opening bracket has a corresponding closing bracket.  ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "\"(\"",
+                    "output": "False"
+                },
+                {
+                    "test_id": 2,
+                    "input": "\"()\"",
+                    "output": "True"
+                },
+                {
+                    "test_id": 3,
+                    "input": "\"(()())\"",
+                    "output": "True"
+                },
+                {
+                    "test_id": 4,
+                    "input": "\")(()\"",
+                    "output": "False"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def derivative(xs: list):",
+            "description_of_test": "xs represent coefficients of a polynomial. xs[0] + xs[1] * x + xs[2] * x^2 + .... Return derivative of this polynomial in the same form. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "[3, 1, 2, 4, 5]",
+                    "output": "[1, 4, 12, 20]"
+                },
+                {
+                    "test_id": 2,
+                    "input": "[1, 2, 3]",
+                    "output": "[2, 6]"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def fibfib(n: int):",
+            "description_of_test": "The FibFib number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows: fibfib(0) == 0 fibfib(1) == 0 fibfib(2) == 1 fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3). Please write a function to efficiently compute the n-th element of the fibfib number sequence. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "1",
+                    "output": "0"
+                },
+                {
+                    "test_id": 2,
+                    "input": "5",
+                    "output": "4"
+                },
+                {
+                    "test_id": 3,
+                    "input": "8",
+                    "output": "24"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def vowels_count(s):",
+            "description_of_test": "Write a function vowels_count which takes a string representing a word as input and returns the number of vowels in the string. Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a vowel, but only when it is at the end of the given word.  Example: ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "\"abcde\"",
+                    "output": "2"
+                },
+                {
+                    "test_id": 2,
+                    "input": "\"ACEDY\"",
+                    "output": "3"
+                }
+            ]
+        },
+        {
+            "name_of_test": "def circular_shift(x, shift):",
+            "description_of_test": "Circular shift the digits of the integer x, shift the digits right by shift and return the result as a string. If shift > number of digits, return digits reversed. ",
+            "test_cases": [
+                {
+                    "test_id": 1,
+                    "input": "12, 1",
+                    "output": "\"21\""
+                },
+                {
+                    "test_id": 2,
+                    "input": "12, 2",
+                    "output": "\"12\""
+                }
+            ]
+        },
+        {
+            "name_of_test": "def digitSum(s):",
+            "description_of_test": "Task Write a function that takes a string as input and returns the sum of the upper characters only' ASCII codes.  Examples: digitSum(\"\") => 0 digitSum(\"abAB\") => 131 digitSum(\"abcCd\") => 67 digitSum(\"helloE\") => 69 digitSum(\"woArBld\") => 131 digitSum(\"aAaaaXa\") => 153 ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def fruit_distribution(s,n):",
+            "description_of_test": " In this task, you will be given a string that represents a number of apples and oranges that are distributed in a basket of fruit this basket contains apples, oranges, and mango fruits. Given the string that represents the total number of the oranges and apples and an integer that represent the total number of the fruits in the basket return the number of the mango fruits in the basket. for examble: fruit_distribution(\"5 apples and 6 oranges\", 19) ->19 - 5 - 6 = 8 fruit_distribution(\"0 apples and 1 oranges\",3) -> 3 - 0 - 1 = 2 fruit_distribution(\"2 apples and 3 oranges\", 100) -> 100 - 2 - 3 = 95 fruit_distribution(\"100 apples and 1 oranges\",120) -> 120 - 100 - 1 = 19 ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def pluck(arr):",
+            "description_of_test": " \"Given an array representing a branch of a tree that has non-negative integer nodes your task is to pluck one of the nodes and return it. The plucked node should be the node with the smallest even value. If multiple nodes with the same smallest even value are found return the node that has smallest index.  The plucked node should be returned in a list, [ smalest_value, its index ], If there are no even values or the given array is empty, return [].  Example 1: Input: [4,2,3] Output: [2, 1] Explanation: 2 has the smallest even value, and 2 has the smallest index.  Example 2: Input: [1,2,3] Output: [2, 1] Explanation: 2 has the smallest even value, and 2 has the smallest index.  Example 3: Input: [] Output: []  Example 4: Input: [5, 0, 3, 0, 4, 2] Output: [0, 1] Explanation: 0 is the smallest value, but  there are two zeros, so we will choose the first zero, which has the smallest index.  Constraints: * 1 <= nodes.length <= 10000 * 0 <= node.value ",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def search(lst):",
+            "description_of_test": "",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def strange_sort_list(lst):",
+            "description_of_test": "",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def triangle_area(a, b, c):",
+            "description_of_test": "",
+            "test_cases": []
+        },
+        {
+            "name_of_test": "def triangle_area(a, b, c):",
+            "description_of_test": "",
+            "test_cases": []
+        }
+    ]
+}
