@@ -20,16 +20,16 @@ Instructions:
   10. Read a file by cid from ipfs network
   11. Other very important apis needed for accessing files, listing files, getting files, reading files from and into the ipfs network
 * Testing Requirements, there must be:
-  1. Test for calling the api for adding a file to ipfs network
-  2. Test for calling the api for adding a folder to ipfs network
-  3. Test for pinning a cid to local
-  4. Test for pinning a cid recursively
-  5. Test for removing pinned cid
-  6. Test for getting a file by cid
-  7. Test for getting a folder by cid
-  8. Test for downloading a file by cid
-  9. Test for downloading a folder by cid
-  10. Test for reading a file by cid
-  11. Test for the other apis.
+  1. Test for calling the api for adding a file to ipfs network using mock ipfs server
+  2. Test for calling the api for adding a folder to ipfs network using mock ipfs server
+  3. Test for pinning a cid to local using mock ipfs server
+  4. Test for pinning a cid recursively using mock ipfs server
+  5. Test for removing pinned cid using mock ipfs server
+  6. Test for getting a file by cid using mock ipfs server
+  7. Test for getting a folder by cid using mock ipfs server
+  8. Test for downloading a file by cid using mock ipfs server
+  9. Test for downloading a folder by cid using mock ipfs server
+  10. Test for reading a file by cid using mock ipfs server
+  11. Test for the other apis using mock ipfs server.
 * All apis should have their own unit tests. The library should work and be ready to be used. The unit tests should run and should pass.
 
