@@ -13,12 +13,11 @@ Instructions:
      * The filename of each json file must be the CidData's Hash. 
      * It should keep track of the output folder count. Folder count starts at 0. 
      * It should save the json files to a folder named "Cid" + the current folder count with 4 digit padding. 
-     * There should be a parameter folderSizeLimitInMB with default value of 1 MB. Once the output folder's size exceeds the given folderSizeLimitInMB, it should increment the folder count, create new folder named "Cid" + the current folder count with 4 digit padding,
-     and save the rest of the json file to the new folder. Repeat when folder size exceeds the given folderSizeLimitInMB. 
+     * Once the output folder's size exceeds 500MB, it should increment the folder count, create new folder named "Cid" + the current folder count with 4 digit padding,
+     and save the rest of the json file to the new folder. Repeat when folder size exceeds 500MB. 
      * All of these sub-folders should be saved in a parent output directory with default as "./output".
    * Deserialize list of CidData from a given directory with multiple json files.
 5. Testing requirements:
    * There must be a unit test for all methods of the CidManager.
-   * There must be a unit test for serializing 10MB worth of list of CidData to "./output" folder.
    * Each test must run and pass their asserts.
    * Use mock data in the tests.
