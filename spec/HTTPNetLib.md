@@ -1,1 +1,0 @@
-Create a Python library named HttpNetLib to manage HTTP servers and clients. This library includes functionality for managing HTTP servers and clients, as well as functions to retrieve a list of HTTP servers and their ports along with the interfaces they are served on. Additionally, the library should include unit tests to validate it's functionality.

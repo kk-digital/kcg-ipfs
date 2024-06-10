@@ -1,1 +1,0 @@
-Create a Python library named PythonLinterLib to analyze Python files and verify if all used variables are defined and if all used classes are defined within the given files. The library should include a Linter class with methods to perform these verifications, along with serialization and deserialization functionalities, and unit tests to validate its correctness.

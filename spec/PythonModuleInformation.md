@@ -1,1 +1,0 @@
-Create a Python library named PythonModuleInfo to retrieve information about modules, including the list of modules imported by a module, the list of functions defined, and the list of classes defined. This library can be used to enforce required imports or restrictions on imports between modules. The library should include unit tests.

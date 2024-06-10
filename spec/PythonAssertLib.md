@@ -1,1 +1,0 @@
-Create a Python library named AssertLib that provides a wrapper for various assertion functionalities. The library should have an AssertWrapper class with methods to perform wrapped assertions and logging stack trace/error messages if the assertion fails. Additionally, it should include unit tests to validate its functionality.
