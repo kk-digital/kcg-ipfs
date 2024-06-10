@@ -1,0 +1,10 @@
+tqdm
+fire
+numpy
+anthropic
+rich
+tavily-python
+ollama
+groq
+openai
+mistralai
