@@ -1,10 +1,5 @@
-import sys
-import os
-
-base_directory = os.getcwd()
-sys.path.insert(0, os.path.join(base_directory, 'wrapper'))
-
-from llm_wrapper import LLMRequest
+from llm_wrapper.llm_wrapper import LLMRequest
+import tqdm
 
 class LLMWrapperManager:
     # The LLMWrapperManager object manages the LLMWrapperOpenAI, LLMWrapperStub or LLMWrapperLMStudio objects.
@@ -20,8 +15,12 @@ class LLMWrapperManager:
 
     def process_queue(self, clear_queue = True):
         results = []
-        for request in self.queue:
+        print("Processing queue of LLM model: %s" % self.model_name)
+
+        for request in tqdm.tqdm(self.queue, desc="Processing requests"):
             result = self.llm_wrapper.make_request(request)
             results.append(result)
+        
+        print("Processing done.")
         if clear_queue: self.queue = []  # Clear the queue after processing
         return results
