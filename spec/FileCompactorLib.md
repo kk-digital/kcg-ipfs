@@ -1,0 +1,1 @@
+Create a Python library named FileCompactorLib to compact files for transmission over the network. The library should include a File class to represent individual files, a FileManager class to manage files within a directory, and functions for serialization, deserialization, and validation of files. Additionally, unit tests should be provided for all functionalities.
