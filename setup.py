@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="kcg-ipfs",
-    py_modules=["human_eval", "llm_wrapper"],
+    py_modules=[],
     version="1.0",
     description="",
     author="kcg",
@@ -19,10 +19,6 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "evaluate_functional_correctness = human_eval.evaluate_functional_correctness:main",
-            "lmstudio_eval = human_eval.eval_scripts.lmstudio_eval:main",
-            "codestral_eval = human_eval.eval_scripts.codestral_eval:main",
-            "openai_eval = human_eval.eval_scripts.openai_eval:main"
         ]
     }
 )
